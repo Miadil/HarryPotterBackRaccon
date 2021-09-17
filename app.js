@@ -24,6 +24,8 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use('/characters', routes.characters)
 app.use('/houses', routes.houses)
+app.use('/spell', routes.spell)
+app.use('/spelltype', routes.spelltype)
 
 app.get('/', (req, res) => {
   res.status(200).send('je suis dans le /')
